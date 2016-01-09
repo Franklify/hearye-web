@@ -5,9 +5,10 @@
 	<title>Hear Ye</title>
 	<link rel="stylesheet" href="css/reset.min.css">
 	<!-- Latest compiled and minified CSS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react-dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -30,16 +31,18 @@
 		</div>
 	</header>
 	<div class="wrapper">
-		<div class="container">
-			<div class="row">
-				<div class="description col-md-6 col-sm-6" id="desc">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div>
-				<div class="iphone-container col-md-6 col-sm-6">
-					<div class="iphone">
-						<img class="top-bar screen-assets" src="img/hearye-topbar.jpg" alt="Top Bar">
-						<img class="bottom-bar screen-assets" src="img/hearye-bottombar.jpg" alt="Bottom Bar">
-						<img  class="device" src="img/iphone-silver.png" alt="iPhone">
+		<div class="bg">
+			<div class="container">
+				<div class="row">
+					<div class="description col-md-6 col-sm-6" id="desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<div class="iphone-container col-md-6 col-sm-6">
+						<div class="iphone">
+							<img class="top-bar screen-assets" src="img/hearye-topbar.jpg" alt="Top Bar">
+							<img class="bottom-bar screen-assets" src="img/hearye-bottombar.jpg" alt="Bottom Bar">
+							<img  class="device" src="img/iphone-silver.png" alt="iPhone">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -63,7 +66,7 @@
 					</ul>
 					<ul>
 						<li>Community</li>
-						<li>Our team</li>
+						<li><a href="#">Our team</a></li>
 						<li>Jobs</li>
 					</ul>
 				</div>
@@ -75,7 +78,8 @@
 			</div>
 		</div>
 	</footer>
-	<script type="text/jsx">
+	<script type="text/babel">
+
 		var Headline = React.createClass({
 			render: function() {
 				return(
@@ -100,20 +104,19 @@
 		var UpdateButton = React.createClass({
 			render: function() {
 				return(
-					<a href="#" class="btn btn-default">Get updates</a>	
+					<a href="#">Get updates</a>	
 				);
 			}
 		});
-		
 		React.render(
-			<div class="headline">
-				<Headline />
-				<Subheading />
-				<BodyText />
-				<UpdateButton />
-			</div>, 
-				
-			document.getElementById("desc"));
+		<div>
+			<Headline />
+			<Subheading />
+			<BodyText />
+			<UpdateButton />
+		</div>, 
+			
+		document.getElementById("desc"));
 	</script>
 </body>
 </html>

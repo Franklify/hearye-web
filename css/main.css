@@ -51,45 +51,51 @@ body {
           body header .container .global-margin .row .col-md-12 ul li:last-child {
             margin-right: 0; }
   body .wrapper {
-    border-bottom: 1px solid #ededed; }
-    body .wrapper .container {
-      max-width: 961px; }
-      body .wrapper .container .row {
-        min-height: 840px;
-        position: relative; }
-        body .wrapper .container .row .description {
-          position: relative;
-          top: 190px; }
-          body .wrapper .container .row .description h1 {
-            color: #000;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-size: 60px;
-            font-weight: 300;
-            line-height: 40px; }
-        body .wrapper .container .row .iphone-container {
-          padding-left: 35px; }
-          body .wrapper .container .row .iphone-container .iphone {
+    border-bottom: 1px solid #ededed;
+    z-index: 5;
+    background-image: url(../img/hearye-background.jpeg);
+    background-size: cover; }
+    body .wrapper .bg {
+      background-color: rgba(242, 116, 43, 0.8); }
+      body .wrapper .bg .container {
+        max-width: 961px; }
+        body .wrapper .bg .container .row {
+          min-height: 840px;
+          position: relative; }
+          body .wrapper .bg .container .row .description {
             position: relative;
-            margin-left: 35px;
-            margin-top: 60px;
-            margin-bottom: 60px;
-            width: 360px;
-            height: auto; }
-            body .wrapper .container .row .iphone-container .iphone .screen-assets {
-              z-index: 10;
-              display: block;
-              position: absolute;
-              width: 312px;
+            top: 190px; }
+            body .wrapper .bg .container .row .description h1 {
+              color: #000;
+              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+              font-size: 60px;
+              font-weight: 300;
+              line-height: 40px; }
+          body .wrapper .bg .container .row .iphone-container {
+            padding-left: 35px; }
+            body .wrapper .bg .container .row .iphone-container .iphone {
+              z-index: 100;
+              position: relative;
+              margin-left: 35px;
+              margin-top: 60px;
+              margin-bottom: 60px;
+              width: 360px;
               height: auto; }
-            body .wrapper .container .row .iphone-container .iphone .top-bar {
-              top: 107px;
-              left: 26px; }
-            body .wrapper .container .row .iphone-container .iphone .bottom-bar {
-              bottom: 102px;
-              left: 26px; }
-            body .wrapper .container .row .iphone-container .iphone .device {
-              width: 100%;
-              height: auto; }
+              body .wrapper .bg .container .row .iphone-container .iphone .screen-assets {
+                z-index: 1000;
+                display: block;
+                position: absolute;
+                width: 312px;
+                height: auto; }
+              body .wrapper .bg .container .row .iphone-container .iphone .top-bar {
+                top: 107px;
+                left: 26px; }
+              body .wrapper .bg .container .row .iphone-container .iphone .bottom-bar {
+                bottom: 102px;
+                left: 26px; }
+              body .wrapper .bg .container .row .iphone-container .iphone .device {
+                width: 100%;
+                height: auto; }
   body footer .container {
     max-width: 961px;
     padding-top: 40px;
@@ -103,7 +109,8 @@ body {
     body footer .container .author {
       padding-left: 10px;
       margin-top: 40px;
-      color: gray; }
+      color: gray;
+      font-size: 12px; }
 
 @media screen and (max-width: 940px) {
   body .wrapper .container .row .iphone-container .iphone {

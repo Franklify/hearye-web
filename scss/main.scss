@@ -12,6 +12,7 @@ $helv : 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 
 $hora: #FF9600;
+$lora: #F2742B;
 $darkBlue: #1F2532;
 $red: #ea6565;
 $black: #2F363B;
@@ -97,57 +98,67 @@ body {
 	
 	.wrapper {
 		border-bottom: 1px solid #ededed;
-		.container {
+		z-index: 5;
+		background-image: url(../img/hearye-background.jpeg);
+		background-size: cover;
+		
+		.bg {
+			background-color: rgba(242, 116, 43, 0.8);
 			
-			max-width: 961px;	
-			.row {
-				min-height: 840px;
-				position: relative;
+			.container {
 				
-				.description {
+				max-width: 961px;	
+				.row {
+					min-height: 840px;
 					position: relative;
-					top: 190px;
-					h1 {
-						@include font($helv, 60px, 300, #000);
-						line-height: 40px;
-					}
-				}
-				.iphone-container {
-					padding-left: 35px;
 					
-					.iphone {
+					.description {
 						position: relative;
-						margin-left: 35px;
-						margin-top: 60px;
-						margin-bottom: 60px;
-						width: 360px;
-						height: auto;
-						
-						.screen-assets {
-							z-index: 10;
-							display: block;
-							position: absolute;
-							width: 312px;
-							height: auto;
-						}
-						.top-bar {
-							top: 107px;
-							left: 26px;
-						}
-						.bottom-bar {
-							bottom: 102px;
-							left: 26px;
-						}
-						
-						.device {
-							width: 100%;
-							height: auto;
+						top: 190px;
+						h1 {
+							@include font($helv, 60px, 300, #000);
+							line-height: 40px;
 						}
 					}
-					
+					.iphone-container {
+						padding-left: 35px;
+						
+						.iphone {
+							z-index: 100;
+							position: relative;
+							margin-left: 35px;
+							margin-top: 60px;
+							margin-bottom: 60px;
+							width: 360px;
+							height: auto;
+							
+							.screen-assets {
+								z-index: 1000;
+								display: block;
+								position: absolute;
+								width: 312px;
+								height: auto;
+							}
+							.top-bar {
+								top: 107px;
+								left: 26px;
+							}
+							.bottom-bar {
+								bottom: 102px;
+								left: 26px;
+							}
+							
+							.device {
+								width: 100%;
+								height: auto;
+							}
+						}
+						
+					}
 				}
 			}
 		}
+		
 	}
 	
 	footer {
@@ -174,6 +185,7 @@ body {
 				padding-left: 10px;
 				margin-top: 40px;
 				color: lighten(#000, 50%);
+				font-size: 12px;
 			}
 		}
 	}
