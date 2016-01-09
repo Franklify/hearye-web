@@ -50,23 +50,99 @@ body {
               color: #000; }
           body header .container .global-margin .row .col-md-12 ul li:last-child {
             margin-right: 0; }
-  body .wrapper .container {
-    max-width: 961px;
+  body .wrapper {
     border-bottom: 1px solid #ededed; }
-    body .wrapper .container .row {
-      min-height: 840px;
-      position: relative; }
-      body .wrapper .container .row .description h1 {
-        color: #000;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 60px;
-        font-weight: 300;
-        line-height: 66px; }
-      body .wrapper .container .row .iphone {
-        margin-left: 35px;
-        top: 80px;
-        width: 360px;
-        height: auto; }
-        body .wrapper .container .row .iphone img {
-          width: 100%;
-          height: auto; }
+    body .wrapper .container {
+      max-width: 961px; }
+      body .wrapper .container .row {
+        min-height: 840px;
+        position: relative; }
+        body .wrapper .container .row .description {
+          position: relative;
+          top: 190px; }
+          body .wrapper .container .row .description h1 {
+            color: #000;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 60px;
+            font-weight: 300;
+            line-height: 40px; }
+        body .wrapper .container .row .iphone-container {
+          padding-left: 35px; }
+          body .wrapper .container .row .iphone-container .iphone {
+            position: relative;
+            margin-left: 35px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            width: 360px;
+            height: auto; }
+            body .wrapper .container .row .iphone-container .iphone .screen-assets {
+              z-index: 10;
+              display: block;
+              position: absolute;
+              width: 312px;
+              height: auto; }
+            body .wrapper .container .row .iphone-container .iphone .top-bar {
+              top: 107px;
+              left: 26px; }
+            body .wrapper .container .row .iphone-container .iphone .bottom-bar {
+              bottom: 102px;
+              left: 26px; }
+            body .wrapper .container .row .iphone-container .iphone .device {
+              width: 100%;
+              height: auto; }
+  body footer .container {
+    max-width: 961px;
+    padding-top: 40px;
+    padding-bottom: 20px; }
+    body footer .container .row .column ul li {
+      line-height: 1.5em;
+      color: gray; }
+    body footer .container .row .column ul li:first-child {
+      font-weight: 600;
+      color: #000; }
+    body footer .container .author {
+      padding-left: 10px;
+      margin-top: 40px;
+      color: gray; }
+
+@media screen and (max-width: 940px) {
+  body .wrapper .container .row .iphone-container .iphone {
+    margin-left: 0; } }
+
+@media screen and (max-width: 850px) {
+  body .wrapper .container .row .iphone-container, body .wrapper .container .row .description {
+    width: 100%; }
+  body .wrapper .container .row .description {
+    padding-top: 20px;
+    top: 0; }
+    body .wrapper .container .row .description h1, body .wrapper .container .row .description h2 {
+      text-align: center; }
+  body .wrapper .container .row .iphone-container .iphone {
+    margin: 60px auto; } }
+
+@media screen and (max-width: 768px) {
+  body footer .row .column {
+    width: 100%; }
+    body footer .row .column ul {
+      display: inline-block;
+      float: left; } }
+
+@media screen and (max-width: 450px) {
+  body .wrapper {
+    max-height: 800px;
+    overflow: hidden; }
+    body .wrapper .container .row .iphone-container .iphone {
+      position: relative;
+      left: -15px; } }
+
+@media screen and (max-width: 400px) {
+  body footer .container .row .column ul:last-child {
+    position: relative;
+    top: 20px;
+    width: 80%;
+    margin-left: 15px; } }
+
+@media screen and (max-width: 350px) {
+  body .wrapper .container .row .iphone-container .iphone {
+    left: -45px;
+    padding: 30px; } }

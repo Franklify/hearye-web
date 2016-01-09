@@ -96,32 +96,201 @@ body {
 	}
 	
 	.wrapper {
+		border-bottom: 1px solid #ededed;
 		.container {
+			
 			max-width: 961px;	
-			border-bottom: 1px solid #ededed;
 			.row {
 				min-height: 840px;
 				position: relative;
 				
 				.description {
+					position: relative;
+					top: 190px;
 					h1 {
 						@include font($helv, 60px, 300, #000);
-						line-height: 66px;
+						line-height: 40px;
 					}
 				}
-				.iphone {
-					margin-left: 35px;
-					top: 80px;
-					width: 360px;
-					height: auto;
-					img {
-						width: 100%;
+				.iphone-container {
+					padding-left: 35px;
+					
+					.iphone {
+						position: relative;
+						margin-left: 35px;
+						margin-top: 60px;
+						margin-bottom: 60px;
+						width: 360px;
 						height: auto;
+						
+						.screen-assets {
+							z-index: 10;
+							display: block;
+							position: absolute;
+							width: 312px;
+							height: auto;
+						}
+						.top-bar {
+							top: 107px;
+							left: 26px;
+						}
+						.bottom-bar {
+							bottom: 102px;
+							left: 26px;
+						}
+						
+						.device {
+							width: 100%;
+							height: auto;
+						}
+					}
+					
+				}
+			}
+		}
+	}
+	
+	footer {
+		.container {
+			max-width: 961px;
+			padding-top: 40px;
+			padding-bottom: 20px;
+			.row {
+				 .column {
+					ul {
+						li {
+							line-height: 1.5em;
+							color: lighten(#000, 50%);
+						}
+						li:first-child {
+							font-weight: 600;
+							color: #000;
+						}
 					}
 				}
+			}
+			
+			.author {
+				padding-left: 10px;
+				margin-top: 40px;
+				color: lighten(#000, 50%);
 			}
 		}
 	}
 	
 }
 
+@media screen and (max-width: 940px) {
+	body {
+		.wrapper {
+			.container {
+				.row {
+					.iphone-container {
+						.iphone {
+							margin-left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 850px) {
+	body {
+		.wrapper {
+			.container {
+				.row {
+					.iphone-container, .description {
+						width: 100%;
+					}
+					
+					.description {
+						padding-top: 20px;
+						top: 0;
+						
+						h1, h2 {
+							text-align: center;
+						}
+					}
+					.iphone-container {
+						.iphone {
+							margin: 60px auto;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		footer {
+			.row {
+				.column {
+					width: 100%;
+					ul {
+						display: inline-block;
+						float: left;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+	body {
+		.wrapper {
+			max-height: 800px;
+			overflow: hidden;
+			.container {
+				.row {
+					.iphone-container {
+						.iphone {
+							position: relative;
+							left: -15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	body {
+		footer {
+			.container {
+				.row {
+					.column {
+						ul:last-child {
+							position: relative;
+							top: 20px;
+							width: 80%;
+							margin-left: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 350px) {
+	body {
+		.wrapper {
+			.container {
+				.row {
+					.iphone-container {
+						.iphone {
+							left: -45px;
+							padding: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

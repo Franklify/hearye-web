@@ -5,6 +5,9 @@
 	<title>Hear Ye</title>
 	<link rel="stylesheet" href="css/reset.min.css">
 	<!-- Latest compiled and minified CSS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -18,7 +21,7 @@
 							<img src="img/hearye-logo.png" alt="HearYe Logo">
 						</div>
 						<ul class="clearfix">
-							<li><a href="">About Hear ye</a></li>
+							<li><a href="">About</a></li>
 							<li><a href="">Contact Us</a></li>
 						</ul>
 					</div>
@@ -29,18 +32,88 @@
 	<div class="wrapper">
 		<div class="container">
 			<div class="row">
-				<div class="description col-md-6 col-sm-6" id="container">
-					<h1>Hear ye</h1>
-					<h2>Something Something Something</h2>
+				<div class="description col-md-6 col-sm-6" id="desc">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
-				<div class="iphone col-md-6 col-sm-6">
-					<img src="img/iphone-silver.png" alt="iPhone">
+				<div class="iphone-container col-md-6 col-sm-6">
+					<div class="iphone">
+						<img class="top-bar screen-assets" src="img/hearye-topbar.jpg" alt="Top Bar">
+						<img class="bottom-bar screen-assets" src="img/hearye-bottombar.jpg" alt="Bottom Bar">
+						<img  class="device" src="img/iphone-silver.png" alt="iPhone">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	
-	<script class="js/main.js"></script>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 column clearfix">
+					<ul class="col-sm-3">
+						<li>Learn more</li>
+						<li><a href="#">What we do</a></li>
+						<li><a href="#">Why we do it</a></li>
+						<li><a href="#">How it works</a></li>
+					</ul>
+					<ul class="col-sm-3">
+						<li>Get in touch</li>
+						<li>+1 (650) 454-6232</li>
+						<li><a href="mailto:info@hearye.squarespace.com">Email Us</a></li>
+					</ul>
+					<ul>
+						<li>Community</li>
+						<li>Our team</li>
+						<li>Jobs</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row author">
+				<div class="col-md-12 col-sm-12 column">
+					<p>&copy; 2016 Hear Ye. All Rights Reserved.<br>Made with &hearts; by the Hear Ye team</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/jsx">
+		var Headline = React.createClass({
+			render: function() {
+				return(
+					<h1>Hear ye</h1>
+				);
+			}
+		});
+		var Subheading = React.createClass({
+			render: function() {
+				return(
+					<h2>Something Something Something</h2>
+				);
+			}
+		});
+		var BodyText = React.createClass({
+			render: function() {
+				return(
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				);
+			}
+		});
+		var UpdateButton = React.createClass({
+			render: function() {
+				return(
+					<a href="#" class="btn btn-default">Get updates</a>	
+				);
+			}
+		});
+		
+		React.render(
+			<div class="headline">
+				<Headline />
+				<Subheading />
+				<BodyText />
+				<UpdateButton />
+			</div>, 
+				
+			document.getElementById("desc"));
+	</script>
 </body>
 </html>
