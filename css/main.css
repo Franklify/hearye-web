@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,800,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,300,400,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+* {
+  box-sizing: border-box; }
+
+*, :after, :before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+a:hover {
+  text-decoration: none; }
+
+body {
+  color: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
+  body header {
+    padding: 10px;
+    border-bottom: 1px solid #ededed;
+    line-height: 40px; }
+    body header .container {
+      max-width: 961px; }
+      body header .container .global-margin {
+        margin-left: 20px;
+        margin-right: 20px; }
+        body header .container .global-margin .row .col-md-12 .hearye-logo {
+          display: inline-block;
+          height: 50px;
+          width: auto; }
+          body header .container .global-margin .row .col-md-12 .hearye-logo img {
+            height: 100%;
+            width: auto; }
+        body header .container .global-margin .row .col-md-12 ul {
+          margin-top: 10px;
+          float: right; }
+          body header .container .global-margin .row .col-md-12 ul li {
+            font-weight: 300;
+            display: inline-block;
+            margin-right: 20px; }
+            body header .container .global-margin .row .col-md-12 ul li a {
+              color: #000; }
+          body header .container .global-margin .row .col-md-12 ul li:last-child {
+            margin-right: 0; }
+  body .wrapper .container {
+    max-width: 961px;
+    border-bottom: 1px solid #ededed; }
+    body .wrapper .container .row {
+      min-height: 840px;
+      position: relative; }
+      body .wrapper .container .row .description h1 {
+        color: #000;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 60px;
+        font-weight: 300;
+        line-height: 66px; }
+      body .wrapper .container .row .iphone {
+        margin-left: 35px;
+        top: 80px;
+        width: 360px;
+        height: auto; }
+        body .wrapper .container .row .iphone img {
+          width: 100%;
+          height: auto; }
