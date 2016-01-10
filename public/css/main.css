@@ -77,17 +77,18 @@ body {
             body .wrapper .bg .container .row .description .update-btn {
               color: #fff;
               font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-              font-size: 22px;
-              font-weight: 300;
+              font-size: 18px;
+              font-weight: 400;
               -webkit-transition: all 0.3s ease-in-out;
               -moz-transition: all 0.3s ease-in-out;
               -o-transition: all 0.3s ease-in-out;
               transition: all 0.3s ease-in-out;
               border-radius: 5px;
-              padding: 10px 15px;
+              padding: 7px 15px;
               border: 2px solid #fff;
               display: inline-block;
-              margin-top: 10px; }
+              margin-top: 10px;
+              text-transform: uppercase; }
               body .wrapper .bg .container .row .description .update-btn:hover {
                 background-color: #fff;
                 color: #F2742B; }
