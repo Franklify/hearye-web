@@ -9,6 +9,7 @@ $bg: "Brandon Grotesque", Arial, Helvetica, sans-serif;
 $proxima: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
 $normal: 'Roboto', Helvetica, Arial, sans-serif;
 $helv : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$list: 'SFNS Display', Helvetica, Arial, sans-serif;
 
 
 $hora: #FF9600;
@@ -26,6 +27,13 @@ $lightblue: #72C8D9;
 	font-family: $type;
 	font-size: $size;
 	font-weight: $weight;
+}
+
+@mixin transition() {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	 -o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 * {
@@ -99,7 +107,7 @@ body {
 	.wrapper {
 		border-bottom: 1px solid #ededed;
 		z-index: 5;
-		background-image: url(../img/hearye-background.jpeg);
+		background: url(../img/hearye-background.jpeg) center center no-repeat fixed;
 		background-size: cover;
 		
 		.bg {
@@ -115,9 +123,25 @@ body {
 					.description {
 						position: relative;
 						top: 190px;
+						color: #fff;
 						h1 {
-							@include font($helv, 60px, 300, #000);
+							@include font($helv, 60px, 500, #fff);
 							line-height: 40px;
+						
+						}
+						
+						.update-btn {
+							@include font($helv, 22px, 500, #fff);
+							@include transition();
+							border-radius: 5px;
+							padding: 10px 15px;
+							border: 2px solid #fff;
+							display: inline-block;
+							margin-top: 10px;
+							&:hover {
+								background-color: #fff;
+								color: $lora;
+							}
 						}
 					}
 					.iphone-container {
@@ -146,6 +170,72 @@ body {
 							.bottom-bar {
 								bottom: 102px;
 								left: 26px;
+							}
+							.feed {
+								z-index: 200;
+								background-color: #fff;
+								top: 160px;
+								left: 26px;
+								height: 460px;
+								overflow: hidden;
+								
+								#feed-list {
+									.feed-item {
+										width: 100%;
+										height: 130px;
+										background-color: #fff;
+										border-bottom: 1px solid #ededed;
+										padding: 10px;
+										position: relative;
+										h3 {
+											@include font($list, 16px, 500, #000);
+											margin-top: 5px;	
+											float: left;
+										}
+										.item-date {
+											@include font($helv, 12px, 300, lighten(#000, 50%));
+											display: inline-block;
+											float: left;
+											margin-top: 7px;
+											position: absolute;
+											right: 10px;
+										}
+										.item-author {
+											@include font($helv, 13px, 300, lighten(#000, 50%));
+											margin-top: 0;
+											position: absolute;
+											left: 10px;
+											top: 33px;
+										}
+										.item-description {
+											@include font($helv, 13px, 400, lighten(#000, 50%));
+											margin-top: 0;
+											line-height: 1.2em;
+											position: absolute;
+											top: 51px;
+											padding-right: 4px;
+											
+											.item-price, item-location {
+												font-weight: 500;
+											}
+											
+											.item-price {
+												color: green;
+											}
+											
+										}
+										.item-info {
+											@include font($helv, 12px, 500, lighten(#000, 25%));
+											margin-top: 0;
+											position: absolute;
+											bottom: -5px;
+											right: 10px;
+											.item-comments {
+												margin-right: 20px;
+											}
+										}
+									}
+								}
 							}
 							
 							.device {
