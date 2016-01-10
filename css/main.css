@@ -71,7 +71,7 @@ body {
               font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
               font-size: 60px;
               font-weight: 500;
-              line-height: 40px; }
+              line-height: 1em; }
             body .wrapper .bg .container .row .description .update-btn {
               color: #fff;
               font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -118,64 +118,81 @@ body {
                 left: 26px;
                 height: 460px;
                 overflow: hidden; }
-                body .wrapper .bg .container .row .iphone-container .iphone .feed #feed-list .feed-item {
+                body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container {
+                  height: 100%;
                   width: 100%;
-                  height: 130px;
-                  background-color: #fff;
-                  border-bottom: 1px solid #ededed;
-                  padding: 10px;
-                  position: relative; }
-                  body .wrapper .bg .container .row .iphone-container .iphone .feed #feed-list .feed-item h3 {
-                    color: #000;
-                    font-family: "SFNS Display", Helvetica, Arial, sans-serif;
-                    font-size: 16px;
-                    font-weight: 500;
-                    margin-top: 5px;
-                    float: left; }
-                  body .wrapper .bg .container .row .iphone-container .iphone .feed #feed-list .feed-item .item-date {
-                    color: gray;
-                    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-                    font-size: 12px;
-                    font-weight: 300;
-                    display: inline-block;
-                    float: left;
-                    margin-top: 7px;
-                    position: absolute;
-                    right: 10px; }
-                  body .wrapper .bg .container .row .iphone-container .iphone .feed #feed-list .feed-item .item-author {
-                    color: gray;
-                    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-                    font-size: 13px;
-                    font-weight: 300;
-                    margin-top: 0;
-                    position: absolute;
-                    left: 10px;
-                    top: 33px; }
-                  body .wrapper .bg .container .row .iphone-container .iphone .feed #feed-list .feed-item .item-description {
-                    color: gray;
-                    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-                    font-size: 13px;
-                    font-weight: 400;
-                    margin-top: 0;
-                    line-height: 1.2em;
-                    position: absolute;
-                    top: 51px;
-                    padding-right: 4px; }
-                    body .wrapper .bg .container .row .iphone-container .iphone .feed #feed-list .feed-item .item-description .item-price, body .wrapper .bg .container .row .iphone-container .iphone .feed #feed-list .feed-item .item-description item-location {
-                      font-weight: 500; }
-                    body .wrapper .bg .container .row .iphone-container .iphone .feed #feed-list .feed-item .item-description .item-price {
-                      color: green; }
-                  body .wrapper .bg .container .row .iphone-container .iphone .feed #feed-list .feed-item .item-info {
-                    color: #404040;
-                    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-                    font-size: 12px;
-                    font-weight: 500;
-                    margin-top: 0;
-                    position: absolute;
-                    bottom: -5px;
-                    right: 10px; }
-                    body .wrapper .bg .container .row .iphone-container .iphone .feed #feed-list .feed-item .item-info .item-comments {
-                      margin-right: 20px; }
+                  overflow-y: scroll;
+                  overflow-x: hidden;
+                  position: relative;
+                  padding-right: 20px;
+                  left: 10px; }
+                  body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item {
+                    width: 100%;
+                    height: 130px;
+                    background-color: #fff;
+                    border-bottom: 1px solid #ededed;
+                    padding: 10px;
+                    position: relative; }
+                    body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item h3 {
+                      color: #000;
+                      font-family: "SFNS Display", Helvetica, Arial, sans-serif;
+                      font-size: 16px;
+                      font-weight: 500;
+                      margin-top: 5px;
+                      float: left; }
+                    body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item .item-date {
+                      color: gray;
+                      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                      font-size: 12px;
+                      font-weight: 300;
+                      display: inline-block;
+                      float: left;
+                      margin-top: 7px;
+                      position: absolute;
+                      right: 10px; }
+                    body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item .item-author {
+                      color: gray;
+                      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                      font-size: 13px;
+                      font-weight: 300;
+                      margin-top: 0;
+                      position: absolute;
+                      left: 10px;
+                      top: 33px; }
+                    body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item .item-description {
+                      color: gray;
+                      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                      font-size: 13px;
+                      font-weight: 400;
+                      margin-top: 0;
+                      line-height: 1.2em;
+                      position: absolute;
+                      top: 51px;
+                      padding-right: 4px; }
+                      body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item .item-description .item-price, body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item .item-description item-location {
+                        font-weight: 500; }
+                      body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item .item-description .item-price {
+                        color: green; }
+                    body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item .item-overlay {
+                      background-color: #fff;
+                      background: linear-gradient(to bottom, #fff 0, transparent 100%);
+                      opacity: 0.5;
+                      width: 100%;
+                      height: 30px;
+                      position: absolute;
+                      bottom: 0; }
+                      body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item .item-overlay .item-info {
+                        opacity: 1;
+                        color: #404040;
+                        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                        font-size: 12px;
+                        font-weight: 500;
+                        margin-top: 0;
+                        position: relative;
+                        top: 10px;
+                        right: -102px; }
+                        body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item .item-overlay .item-info .item-comments {
+                          margin-right: 20px; }
               body .wrapper .bg .container .row .iphone-container .iphone .device {
                 width: 100%;
                 height: auto; }
@@ -196,18 +213,22 @@ body {
       font-size: 12px; }
 
 @media screen and (max-width: 940px) {
-  body .wrapper .container .row .iphone-container .iphone {
+  body .wrapper .bg .container .row .iphone-container .iphone {
     margin-left: 0; } }
 
 @media screen and (max-width: 850px) {
-  body .wrapper .container .row .iphone-container, body .wrapper .container .row .description {
+  body .wrapper .bg .container .row .iphone-container, body .wrapper .bg .container .row .description {
     width: 100%; }
-  body .wrapper .container .row .description {
+  body .wrapper .bg .container .row .description {
     padding-top: 20px;
     top: 0; }
-    body .wrapper .container .row .description h1, body .wrapper .container .row .description h2 {
+    body .wrapper .bg .container .row .description h1, body .wrapper .bg .container .row .description h2 {
       text-align: center; }
-  body .wrapper .container .row .iphone-container .iphone {
+    body .wrapper .bg .container .row .description .update-btn {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%); }
+  body .wrapper .bg .container .row .iphone-container .iphone {
     margin: 60px auto; } }
 
 @media screen and (max-width: 768px) {
@@ -217,11 +238,17 @@ body {
       display: inline-block;
       float: left; } }
 
+@media screen and (max-width: 550px) {
+  body .wrapper .bg .container .row .description h1 {
+    font-size: 36px; }
+  body .wrapper .bg .container .row .description h2 {
+    font-size: 22px; } }
+
 @media screen and (max-width: 450px) {
   body .wrapper {
     max-height: 800px;
     overflow: hidden; }
-    body .wrapper .container .row .iphone-container .iphone {
+    body .wrapper .bg .container .row .iphone-container .iphone {
       position: relative;
       left: -15px; } }
 
@@ -233,6 +260,21 @@ body {
     margin-left: 15px; } }
 
 @media screen and (max-width: 350px) {
-  body .wrapper .container .row .iphone-container .iphone {
-    left: -45px;
-    padding: 30px; } }
+  body .wrapper .bg .container .row .iphone-container .iphone {
+    width: 300px; }
+    body .wrapper .bg .container .row .iphone-container .iphone .screen-assets {
+      width: 259px; }
+    body .wrapper .bg .container .row .iphone-container .iphone .top-bar {
+      top: 89px;
+      left: 22px; }
+    body .wrapper .bg .container .row .iphone-container .iphone .feed {
+      top: 133px;
+      left: 22px; }
+      body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item h3 {
+        font-size: 14px; }
+      body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item .item-date, body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item .item-author {
+        font-size: 9px; }
+      body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item .item-description, body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item .item-comments, body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item .item-attending {
+        font-size: 11px; }
+      body .wrapper .bg .container .row .iphone-container .iphone .feed .feed-container #feed-list .feed-item .item-overlay .item-info {
+        right: -59px; } }

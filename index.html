@@ -34,22 +34,23 @@
 			<div class="container">
 				<div class="row">
 					<div class="description col-md-6 col-sm-6" id="desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
 					<div class="iphone-container col-md-6 col-sm-6">
 						<div class="iphone">
 							<img class="top-bar screen-assets" src="img/hearye-topbar.jpg" alt="Top Bar">
 							<img class="bottom-bar screen-assets" src="img/hearye-bottombar.jpg" alt="Bottom Bar">
 							<div class="feed screen-assets">
-								<ul id="feed-list">
-									<li class="feed-item">
-										<h3>DesignWorks Recruitment</h3>
-										<h6 class="item-date">Jan 11<h6>
-										<h4 class="item-author">by DesignWorks</h4>
-										<p class="item-description"><span class="item-price">Free</span> &#8226; <span class="item-location">Norris Center</span> &#8226; We're looking for designers and developers for this upcoming quarter. Build cool stuff and make money! Apply now!</p>
-										<p class="item-info"><span class="item-comments">12 comments</span><span class="item-attending">42 attending</span></p>
-									</li>
-								</ul>
+								<div class="feed-container">
+									<ul id="feed-list">
+										<li class="feed-item">
+											<h3>DesignWorks Recruitment</h3>
+											<h6 class="item-date">Jan 11<h6>
+											<h4 class="item-author">by DesignWorks</h4>
+											<p class="item-description"><span class="item-price">Free</span> &#8226; <span class="item-location">Norris Center</span> &#8226; We're looking for designers and developers for this upcoming quarter. Build cool stuff and make money! Apply now!</p>
+											<p class="item-info"><span class="item-comments">12 comments</span><span class="item-attending">42 attending</span></p>
+										</li>
+									</ul>
+								</div>
 							</div>
 							<img  class="device" src="img/iphone-silver.png" alt="iPhone">
 						</div>
@@ -93,7 +94,7 @@
 		var Headline = React.createClass({
 			render: function() {
 				return(
-					<h1>Hear Ye on iOS</h1>
+					<h1>HearYe on iOS</h1>
 				);
 			}
 		});
@@ -140,14 +141,16 @@
 				itemLoc = "item-location",
 				itemInfo = "item-info",
 				itemCom = "item-comments",
-				itemAttend = "item-attending";
+				itemAttend = "item-attending",
+				itemOverlay = "item-overlay";
+				
 				return(
 					<li className={feedItem}>
 						<h3>{this.props.event}</h3>
 						<h6 className={itemDate}>{this.props.date}</h6>
 						<h4 className={itemAuthor}>by {this.props.author}</h4>
 						<p className={itemDesc}><span className={itemPrice}>{this.props.price}</span> &#8226; <span className={itemLoc}>{this.props.location}</span>  &#8226; {this.props.children}</p> 
-						<p className={itemInfo}><span className={itemCom}>{this.props.comments} comments</span><span className={itemAttend}>{this.props.attending} attending</span></p>
+						<div className={itemOverlay}><p className={itemInfo}><span className={itemCom}>{this.props.comments} comments</span><span className={itemAttend}>{this.props.attending} attending</span></p></div>
 					</li>	
 				);
 			}
@@ -155,7 +158,7 @@
 		
 		React.render(
 		<div>
-			<ListItem event="Design Works Recruitment" date="Jan 11" author="DesignWorks" price="Free" location="Norris Center" comments="12" attending="42">We're looking for designers and developers for this upcoming quarter. Build cool stuff and make money! Apply now!</ListItem>
+			<ListItem event="DesignWorks Recruitment" date="Jan 11" author="DesignWorks" price="Free" location="Norris Center" comments="12" attending="42">We're looking for designers and developers for this upcoming quarter. Apply now!</ListItem>
 			<ListItem event="Decorate a Donut" date="Jan 14" author="ASG" price="$5" location="Norris Ground Floor" comments="20" attending="67">Decorate a donut at the food court on the ground floor of Norris.</ListItem>
 			<ListItem event="Interstellar Screening" date="Jan 20" author="Movie Club" price="$2" location="Tech LR2" comments="45" attending="101">Watch Interstellar, the critically acclaimed Sci-Fi thriller!</ListItem>
 			<ListItem event="Cookies 4 a Cure" date="Jan 21" author="DU Top Haus" price="$3" location="Lisa's Cafe" comments="34" attending="50">Purchase baked goods and we'll donate some of the money to St. Judes Children Hospital.</ListItem>
