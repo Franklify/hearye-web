@@ -3,8 +3,6 @@ app = express(),
 http = require('http').createServer(app),
 path = require('path');
 
-port = process.env.port || 3000;
-
 app.use(express.static(path.join(__dirname, 'public')));
 
 //get request for index
@@ -12,6 +10,6 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/views/index.html');
 });
 
-http.listen(port, function(){
-  console.log('listening on port :3000');
+http.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
