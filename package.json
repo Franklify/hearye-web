@@ -2,7 +2,7 @@
   "name": "hearye-landing",
   "version": "1.0.0",
   "description": "A landing page for the HEARYE App",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
