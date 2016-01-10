@@ -125,13 +125,13 @@ body {
 						top: 190px;
 						color: #fff;
 						h1 {
-							@include font($helv, 60px, 500, #fff);
+							@include font($list, 60px, 400, #fff);
 							line-height: 1em;
 						
 						}
 						
 						.update-btn {
-							@include font($helv, 22px, 500, #fff);
+							@include font($helv, 22px, 300, #fff);
 							@include transition();
 							border-radius: 5px;
 							padding: 10px 15px;
@@ -435,7 +435,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
 	body {
 		.wrapper {
 			.bg {
