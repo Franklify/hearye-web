@@ -1,6 +1,5 @@
 var express = require('express'),
 app = express(),
-http = require('http').createServer(app),
 path = require('path');
 
 app.use(express.static(path.join(__dirname, 'public')));
