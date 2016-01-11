@@ -40,6 +40,7 @@ gulp.task('watch', function() {
     gulp.watch('public/scss/*.scss', ['sass']);
 });
 
+//Nodemon - start node server and watch for changes
 gulp.task('start', function () {
   nodemon({
     script: 'server.js'
