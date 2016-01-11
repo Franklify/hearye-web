@@ -10,6 +10,7 @@ $proxima: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
 $normal: 'Roboto', Helvetica, Arial, sans-serif;
 $helv : 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $list: 'SFNS Display', Helvetica, Arial, sans-serif;
+$title: 'Avenir Next LT Pro', Arial, sans-serif;
 
 
 $hora: #FF9600;
@@ -115,7 +116,7 @@ body {
 		background-size: cover;
 		
 		.bg {
-			background-color: rgba(242, 116, 43, 0.8);
+			background: radial-gradient(circle at 50% 200%,#ffc700 30%,#f65058 80%);
 			
 			.container {
 				
@@ -129,23 +130,26 @@ body {
 						top: 190px;
 						color: #fff;
 						h1 {
-							@include font($list, 60px, 400, #fff);
+							@include font($title, 48px, 700, #fff);
 							line-height: 1em;
-						
+							margin-bottom: 0;
+						}
+						h2 {
+							@include font($title, 27px, 400, #fff);
+							margin-top: 5px;
 						}
 						
 						.update-btn {
-							@include font($helv, 18px, 400, #fff);
+							@include font($helv, 16px, 500, #fff);
 							@include transition();
 							border-radius: 5px;
-							padding: 7px 15px;
-							border: 2px solid #fff;
+							padding: 12px 20px;
+							background: #0d9ddb;
+							box-shadow: inset 0 1px 0 rgba(255,255,255,.04),inset 0 0 1px rgba(255,255,255,.37),0 1px 0 rgba(0,0,0,.05);
 							display: inline-block;
 							margin-top: 10px;
-							text-transform: uppercase;
 							&:hover {
-								background-color: #fff;
-								color: $lora;
+								background-color: darken(#0d9ddb, 10%);
 							}
 						}
 					}
