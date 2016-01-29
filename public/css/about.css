@@ -1,0 +1,171 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,800,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,300,400,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+body .wrapper .bg-about {
+  background: url(../img/party-bg.jpeg) center center fixed no-repeat;
+  background-size: cover;
+  height: 400px; }
+  body .wrapper .bg-about .title-wrapper {
+    position: relative;
+    background-color: rgba(255, 94, 47, 0.8);
+    color: #fff;
+    height: 100%; }
+    body .wrapper .bg-about .title-wrapper h1 {
+      color: #fff;
+      font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
+      font-size: 42px;
+      font-weight: 600;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    body .wrapper .bg-about .title-wrapper h1, body .wrapper .bg-about .title-wrapper h2 {
+      text-align: center; }
+
+body .wrapper .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 961px; }
+
+body .wrapper .about .boxes {
+  margin-bottom: 20px; }
+  body .wrapper .about .boxes .text-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    float: left;
+    font-size: 20px;
+    box-pack: start;
+    box-align: center;
+    box-orient: vertical;
+    box-direction: normal;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 50px; }
+    body .wrapper .about .boxes .text-box span {
+      display: block;
+      text-transform: uppercase;
+      color: #F2742B;
+      font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
+      font-size: 0.8em;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 10px; }
+  body .wrapper .about .boxes .text-box.first {
+    border-right: 1px solid #ccc; }
+
+body .wrapper .about h4 {
+  font-size: 32px;
+  margin-left: 20px; }
+
+body .wrapper .about .keys {
+  margin-top: 25px; }
+  body .wrapper .about .keys li {
+    list-style: square;
+    margin-left: 30px;
+    line-height: 1.5em;
+    font-size: 18px;
+    padding-bottom: 20px; }
+    body .wrapper .about .keys li b {
+      color: #F2742B; }
+
+body .bg-wrapper {
+  background-color: #f7f7f7; }
+  body .bg-wrapper .team .team-boxes .tbox {
+    color: #4d4d4d;
+    position: relative;
+    width: 40%;
+    float: left; }
+    body .bg-wrapper .team .team-boxes .tbox .text-wrapper {
+      padding-top: 100px;
+      padding-left: 50px;
+      padding-right: 30px;
+      padding-bottom: 20px; }
+      body .bg-wrapper .team .team-boxes .tbox .text-wrapper .button {
+        cursor: pointer;
+        cursor: hand;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: .25rem;
+        margin-bottom: .25rem;
+        min-width: 8rem;
+        padding-right: 2.25rem;
+        padding-left: 2.25rem;
+        font-size: 1.25rem;
+        color: #1774E2;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-right: 0;
+        margin-left: 0;
+        line-height: 1;
+        text-align: center;
+        text-shadow: none;
+        vertical-align: middle;
+        border-width: .25rem;
+        border-style: solid;
+        border-radius: .25rem;
+        outline: 0;
+        -webkit-transition: background-color 150ms,border-color 150ms,color 75ms ease-out;
+        transition: background-color 150ms,border-color 150ms,color 75ms ease-out;
+        letter-spacing: .1em; }
+        body .bg-wrapper .team .team-boxes .tbox .text-wrapper .button:hover {
+          background-color: #1774E2;
+          border-color: transparent;
+          color: #fff; }
+  body .bg-wrapper .team .team-boxes li.squad {
+    width: 60%; }
+    body .bg-wrapper .team .team-boxes li.squad ul li {
+      display: inline-block;
+      margin: 15px; }
+      body .bg-wrapper .team .team-boxes li.squad ul li .mask {
+        margin: 0 auto;
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        overflow: hidden; }
+        body .bg-wrapper .team .team-boxes li.squad ul li .mask img {
+          width: 100%;
+          height: 100%; }
+      body .bg-wrapper .team .team-boxes li.squad ul li h4, body .bg-wrapper .team .team-boxes li.squad ul li p {
+        text-align: center; }
+      body .bg-wrapper .team .team-boxes li.squad ul li h4 {
+        margin-bottom: 0; }
+
+@media screen and (max-width: 992px) {
+  body .wrapper .bg-wrapper .team .team-boxes .tbox {
+    width: 100%;
+    text-align: center; }
+    body .wrapper .bg-wrapper .team .team-boxes .tbox .text-wrapper {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 30px; } }
+
+@media screen and (max-width: 815px) {
+  body .wrapper .bg-about .title-wrapper h1 {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+@media screen and (max-width: 650px) {
+  body .wrapper .bg-about .title-wrapper h1 {
+    top: 45%;
+    font-size: 27px; }
+  body .wrapper .container .boxes .text-box {
+    width: 100%; }
+  body .wrapper .container .boxes .text-box.first {
+    border-right: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 0; }
+  body .wrapper .container h4 {
+    font-size: 22px; }
+  body .wrapper .container .keys li {
+    font-size: 16px; } }
+
+@media screen and (max-width: 450px) {
+  body .wrapper {
+    max-height: none;
+    overflow: none; } }
