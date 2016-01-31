@@ -57,7 +57,7 @@ body {
     z-index: 5;
     background-size: cover; }
     body .wrapper .bg {
-      background: radial-gradient(circle at 50% 200%, #ffc700 20%, #f65058 80%); }
+      background: radial-gradient(circle at 50% 200%, #f65058 20%, #F2742A 80%); }
       body .wrapper .bg .container {
         max-width: 961px; }
         body .wrapper .bg .container .row {
