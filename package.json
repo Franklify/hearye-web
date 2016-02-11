@@ -10,8 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "classnames": "^2.2.3",
-    "f": "^0.5.0",
     "firebase": "^2.4.0",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
