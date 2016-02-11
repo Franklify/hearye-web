@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,800,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,300,400,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+body .wrapper .bg-wrapper {
+  background-color: #fff; }
+  body .wrapper .bg-wrapper .team {
+    padding: 20px; }
+    body .wrapper .bg-wrapper .team .team-boxes .tbox {
+      color: #4d4d4d;
+      position: relative;
+      width: 40%;
+      float: left; }
+      body .wrapper .bg-wrapper .team .team-boxes .tbox .text-wrapper {
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-bottom: 20px; }
+        body .wrapper .bg-wrapper .team .team-boxes .tbox .text-wrapper .button {
+          cursor: pointer;
+          cursor: hand;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          margin-top: .25rem;
+          margin-bottom: .25rem;
+          min-width: 8rem;
+          padding-right: 2.25rem;
+          padding-left: 2.25rem;
+          font-size: 1.25rem;
+          color: #1774E2;
+          font-weight: 600;
+          text-transform: uppercase;
+          display: inline-block;
+          margin-right: 0;
+          margin-left: 0;
+          line-height: 1;
+          text-align: center;
+          text-shadow: none;
+          vertical-align: middle;
+          border-width: .25rem;
+          border-style: solid;
+          border-radius: .25rem;
+          outline: 0;
+          -webkit-transition: background-color 150ms,border-color 150ms,color 75ms ease-out;
+          transition: background-color 150ms,border-color 150ms,color 75ms ease-out;
+          letter-spacing: .1em; }
+          body .wrapper .bg-wrapper .team .team-boxes .tbox .text-wrapper .button:hover {
+            background-color: #1774E2;
+            border-color: transparent;
+            color: #fff; }
+    body .wrapper .bg-wrapper .team .team-boxes li.squad {
+      width: 60%; }
+      body .wrapper .bg-wrapper .team .team-boxes li.squad ul li {
+        width: 250px;
+        display: inline-block;
+        margin: 15px; }
+        body .wrapper .bg-wrapper .team .team-boxes li.squad ul li .mask {
+          margin: 0 auto;
+          height: 100px;
+          width: 100px;
+          border-radius: 100px;
+          overflow: hidden; }
+          body .wrapper .bg-wrapper .team .team-boxes li.squad ul li .mask img {
+            width: 100%;
+            height: auto; }
+        body .wrapper .bg-wrapper .team .team-boxes li.squad ul li h4, body .wrapper .bg-wrapper .team .team-boxes li.squad ul li p {
+          text-align: center; }
+        body .wrapper .bg-wrapper .team .team-boxes li.squad ul li p.bio {
+          text-align: left;
+          color: #3e3e3e; }
+          body .wrapper .bg-wrapper .team .team-boxes li.squad ul li p.bio a {
+            color: #0B87BC; }
+            body .wrapper .bg-wrapper .team .team-boxes li.squad ul li p.bio a:hover {
+              color: #08648c; }
+        body .wrapper .bg-wrapper .team .team-boxes li.squad ul li h4 {
+          margin-bottom: 0; }
+
+@media screen and (max-width: 992px) {
+  body .wrapper .bg-wrapper .team .team-boxes .tbox {
+    width: 100%;
+    text-align: center; }
+    body .wrapper .bg-wrapper .team .team-boxes .tbox .text-wrapper {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 30px; }
+  body .wrapper .bg-wrapper .team .team-boxes li.squad {
+    width: 100%; } }
+
+@media screen and (max-width: 450px) {
+  body .wrapper {
+    max-height: none;
+    overflow: none; } }

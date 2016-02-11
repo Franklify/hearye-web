@@ -90,14 +90,14 @@ var Feed = React.createClass({
   render: function() {
     return(
       <div>
-        <ListItem event="DesignWorks Recruitment" date="Jan 11" author="DesignWorks" price="Free" location="Norris Center" comments="12" attending="42">We are looking for designers and developers for this upcoming quarter. Apply now!</ListItem>
-        <ListItem event="Decorate a Donut" date="Jan 14" author="ASG" price="$5" location="Norris Ground Floor" comments="20" attending="67">Decorate a donut at the food court on the ground floor of Norris.</ListItem>
-        <ListItem event="Interstellar Screening" date="Jan 20" author="Movie Club" price="$2" location="Tech LR2" comments="45" attending="101">Watch Interstellar, the critically acclaimed Sci-Fi thriller!</ListItem>
-        <ListItem event="Cookies 4 a Cure" date="Jan 21" author="DU Top Haus" price="$3" location="Lisa's Cafe" comments="34" attending="50">Purchase baked goods and we will donate some of the money to St. Judes Children Hospital.</ListItem>
-        <ListItem event="Kids to Campus" date="Jan 21" author="Supplies for Dreams" price="Free" location="The Arch" comments="5" attending="13">Welcome back to 8th grade! </ListItem>
-        <ListItem event="APAC Potluck" date="Jan 22" author="APAC" price="Free" location="1800 Sherman Ave" comments="10" attending="15">Enjoy APAC annual potluck. Be sure to bring some Asian cuisine.</ListItem>
-        <ListItem event="Usercentric Launch Party" date="Jan 20" author="Usercentric" price="Free" location="The Garage" comments="11" attending="21">Usercentric is launching and we are inviting you to come celebrate it with us @ the Garage.</ListItem>
-        <ListItem event="Boba Fundraiser" date="Jan 21" author="TASC" price="$5" location="Kung Fu Tea" comments="22" attending="15">Come to Kung Fu tea in Evanston to support TASC in 2016!</ListItem>
+        <ListItem event="DW Recruitment" date="12PM, Fri, Jan 11" author="DesignWorks" price="Free" location="Norris Center" comments="12" attending="42">We are looking for designers and developers for this upcoming quarter. Apply now!</ListItem>
+        <ListItem event="Decorate a Donut" date="10AM Mon, Jan 14" author="ASG" price="$5" location="Norris Ground Floor" comments="20" attending="67">Decorate a donut at the food court on the ground floor of Norris.</ListItem>
+        <ListItem event="Interstellar Screening" date="10PM Wed, Jan 20" author="Movie Club" price="$2" location="Tech LR2" comments="45" attending="101">Watch Interstellar, the critically acclaimed Sci-Fi thriller!</ListItem>
+        <ListItem event="Cookies 4 a Cure" date="9AM Thu, Jan 21" author="DU Top Haus" price="$3" location="Lisa's Cafe" comments="34" attending="50">Purchase baked goods and we will donate some of the money to St. Judes Children Hospital.</ListItem>
+        <ListItem event="Kids to Campus" date="11AM Thu, Jan 21" author="Supplies for Dreams" price="Free" location="The Arch" comments="5" attending="13">Welcome back to 8th grade! </ListItem>
+        <ListItem event="APAC Potluck" date="6PM Fri, Jan 22" author="APAC" price="Free" location="1800 Sherman Ave" comments="10" attending="15">Enjoy APAC annual potluck. Be sure to bring some Asian cuisine.</ListItem>
+        <ListItem event="UC Launch Party" date="11PM Wed, Jan 20" author="Usercentric" price="Free" location="The Garage" comments="11" attending="21">Usercentric is launching and we are inviting you to come celebrate it with us @ the Garage.</ListItem>
+        <ListItem event="Boba Fundraiser" date="6PM Thu, Jan 21" author="TASC" price="$5" location="Kung Fu Tea" comments="22" attending="15">Come to Kung Fu tea in Evanston to support TASC in 2016!</ListItem>
       </div>
     );
   }

@@ -11,8 +11,11 @@ app.get('/', function(req, res){
 app.get('/how-it-works', function(req, res) {
   res.sendFile(__dirname + '/views/about.html');
 });
-app.get('/about', function(req, res) {
+app.get('/team', function(req, res) {
   res.sendFile(__dirname + '/views/team.html');
+});
+app.get('/blog', function(req, res) {
+  res.sendFile(__dirname + '/views/blog.html');
 });
 
 app.listen(process.env.PORT || 1337, function(){

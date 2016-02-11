@@ -254,6 +254,12 @@ body {
   body .wrapper .bg .container .row .description h2 {
     font-size: 22px; } }
 
+@media screen and (max-width: 530px) {
+  body header .container .global-margin .row .col-md-12 {
+    text-align: center; }
+    body header .container .global-margin .row .col-md-12 .mobile {
+      display: none; } }
+
 @media screen and (max-width: 450px) {
   body .wrapper {
     max-height: 800px;
