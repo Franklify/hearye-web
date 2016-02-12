@@ -325,6 +325,31 @@ body {
 
 }
 
+@media screen and (max-width: 992px) {
+	body {
+		.wrapper {
+			.bg {
+				.container {
+					.row {
+						.description {
+							.subscribe-input {
+								width: 100%;
+							}
+							p {
+								text-align: center;
+							}
+							.update-btn {
+
+								margin-top: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 940px) {
 	body {
 		.wrapper {
@@ -349,6 +374,7 @@ body {
 			.bg {
 				.container {
 					.row {
+
 						.iphone-container, .description {
 							width: 100%;
 						}
@@ -359,6 +385,9 @@ body {
 
 							h1, h2 {
 								text-align: center;
+							}
+							.subscribe-input {
+								margin-top: 20px;
 							}
 							.update-btn {
 								position: relative;

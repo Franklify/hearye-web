@@ -232,6 +232,14 @@ body {
         color: gray;
         font-size: 12px; }
 
+@media screen and (max-width: 992px) {
+  body .wrapper .bg .container .row .description .subscribe-input {
+    width: 100%; }
+  body .wrapper .bg .container .row .description p {
+    text-align: center; }
+  body .wrapper .bg .container .row .description .update-btn {
+    margin-top: 20px; } }
+
 @media screen and (max-width: 940px) {
   body .wrapper .bg .container .row .iphone-container .iphone {
     margin-left: 0; } }
@@ -244,6 +252,8 @@ body {
     top: 0; }
     body .wrapper .bg .container .row .description h1, body .wrapper .bg .container .row .description h2 {
       text-align: center; }
+    body .wrapper .bg .container .row .description .subscribe-input {
+      margin-top: 20px; }
     body .wrapper .bg .container .row .description .update-btn {
       position: relative;
       left: 50%;
