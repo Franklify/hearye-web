@@ -1,76 +1,139 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,800,900);
 @import url(http://fonts.googleapis.com/css?family=Raleway:100,300,400,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
-body .wrapper .bg-about {
-  background: url(../img/party-bg.jpeg) center center fixed no-repeat;
-  background-size: cover;
-  height: 400px; }
-  body .wrapper .bg-about .title-wrapper {
-    position: relative;
-    background-color: rgba(255, 94, 47, 0.8);
-    color: #fff;
-    height: 100%; }
-    body .wrapper .bg-about .title-wrapper h1 {
-      color: #fff;
-      font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
-      font-size: 42px;
-      font-weight: 600;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-    body .wrapper .bg-about .title-wrapper h1, body .wrapper .bg-about .title-wrapper h2 {
-      text-align: center; }
+body .wrapper #problem {
+  width: 100%;
+  height: 500px;
+  background: url(../img/party-bg.jpeg) center center no-repeat fixed;
+  background-size: cover; }
+  body .wrapper #problem .bg-problem {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #f2742a 0%, rgba(231, 56, 39, 0.58) 100%); }
+    body .wrapper #problem .bg-problem .container {
+      max-width: 912px;
+      padding-top: 30px;
+      padding-bottom: 50px; }
+      body .wrapper #problem .bg-problem .container .time-icon {
+        text-align: center;
+        margin: 0px 10px 10px 10px; }
+        body .wrapper #problem .bg-problem .container .time-icon .svg-icon {
+          width: 7em;
+          height: 7em; }
+          body .wrapper #problem .bg-problem .container .time-icon .svg-icon path, body .wrapper #problem .bg-problem .container .time-icon .svg-icon polygon, body .wrapper #problem .bg-problem .container .time-icon .svg-icon rect {
+            fill: #fff; }
+      body .wrapper #problem .bg-problem .container h1 {
+        text-align: center;
+        color: #fff;
+        font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        font-weight: 700;
+        margin-top: 0;
+        line-height: 1.5em; }
+      body .wrapper #problem .bg-problem .container ul {
+        margin-top: 50px; }
+        body .wrapper #problem .bg-problem .container ul li {
+          padding: 30px;
+          display: inline-block;
+          float: left;
+          color: whitesmoke;
+          font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
+          font-size: 1em;
+          font-weight: 400; }
+          body .wrapper #problem .bg-problem .container ul li h2 {
+            margin-top: 0;
+            font-size: 1em;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #fff; }
+          body .wrapper #problem .bg-problem .container ul li p {
+            font-size: 1.2em; }
+        body .wrapper #problem .bg-problem .container ul li:first-child {
+          border-right: 1px solid #fff; }
+        body .wrapper #problem .bg-problem .container ul li:last-child {
+          margin-right: 0; }
 
-body .wrapper .container {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  max-width: 961px; }
-
-body .wrapper .about .boxes {
-  margin-bottom: 20px; }
-  body .wrapper .about .boxes .text-box {
-    margin-top: 20px;
-    margin-bottom: 20px;
+body .wrapper #filter {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  padding: 30px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed; }
+  body .wrapper #filter ul li {
     width: 50%;
+    display: inline-block;
     float: left;
-    font-size: 20px;
-    box-pack: start;
-    box-align: center;
-    box-orient: vertical;
-    box-direction: normal;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 50px 50px; }
-    body .wrapper .about .boxes .text-box span {
-      display: block;
-      text-transform: uppercase;
-      color: #F2742B;
-      font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
-      font-size: 0.8em;
-      font-weight: 700;
-      letter-spacing: 2px;
-      margin-bottom: 10px; }
-  body .wrapper .about .boxes .text-box.first {
-    border-right: 1px solid #ccc; }
+    padding: 20px; }
+    body .wrapper #filter ul li .iphone-animation {
+      position: relative;
+      margin: 0 auto;
+      width: 360px;
+      height: auto; }
+      body .wrapper #filter ul li .iphone-animation .device {
+        width: 100%; }
+      body .wrapper #filter ul li .iphone-animation .screen {
+        width: 312px;
+        height: auto;
+        position: absolute;
+        top: 107px;
+        left: 26px; }
+  body .wrapper #filter ul li:first-child {
+    padding: 85px;
+    line-height: 1.5em; }
+    body .wrapper #filter ul li:first-child h3 {
+      text-align: center;
+      font-size: 2.5em; }
+    body .wrapper #filter ul li:first-child p {
+      margin: 20px; }
 
-body .wrapper .about h4 {
-  font-size: 32px;
-  margin-left: 20px; }
-
-body .wrapper .about .keys {
-  margin-top: 25px; }
-  body .wrapper .about .keys li {
-    list-style: square;
-    margin-left: 30px;
+body .wrapper #event-creation {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  padding: 30px;
+  background: #f2732a; }
+  body .wrapper #event-creation ul li {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    padding: 20px; }
+    body .wrapper #event-creation ul li .iphone-animation {
+      position: relative;
+      margin: 0 auto;
+      width: 360px;
+      height: auto; }
+      body .wrapper #event-creation ul li .iphone-animation .device {
+        width: 100%; }
+      body .wrapper #event-creation ul li .iphone-animation .screen {
+        width: 312px;
+        height: auto;
+        position: absolute;
+        top: 107px;
+        left: 26px; }
+  body .wrapper #event-creation ul li:last-child {
+    padding: 85px;
     line-height: 1.5em;
-    font-size: 18px;
-    padding-bottom: 20px; }
-    body .wrapper .about .keys li b {
-      color: #F2742B; }
+    color: #fff; }
+    body .wrapper #event-creation ul li:last-child h3 {
+      font-size: 2em; }
+    body .wrapper #event-creation ul li:last-child p {
+      font-size: 1.2em; }
+
+body .wrapper .svg-icon {
+  width: 5em;
+  height: 5em; }
+
+body .wrapper .svg-icon path,
+body .wrapper .svg-icon polygon,
+body .wrapper .svg-icon rect {
+  fill: #4691f6; }
+
+body .wrapper .svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1; }
 
 @media screen and (max-width: 815px) {
   body .wrapper .bg-about .title-wrapper h1 {
