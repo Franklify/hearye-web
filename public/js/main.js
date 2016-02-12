@@ -1,44 +1,4 @@
 
-var Headline = React.createClass({
-  render: function() {
-    return(
-      <h1>HearYe</h1>
-    );
-  }
-});
-var Subheading = React.createClass({
-  render: function() {
-    return(
-      <h2>The digital bulletin board for university events.</h2>
-    );
-  }
-});
-var BodyText = React.createClass({
-  render: function() {
-    return(
-      <p>Say goodbye to word of mouth, and say hello to the new town crier.</p>
-    );
-  }
-});
-var UpdateButton = React.createClass({
-  render: function() {
-    var updateBtn = "update-btn";
-    return(
-      <a href="#" className={updateBtn}>Get involved</a>
-    );
-  }
-});
-
-ReactDOM.render(
-<div>
-  <Headline/>
-  <Subheading />
-  <BodyText />
-  <UpdateButton />
-</div>,
-
-document.getElementById("desc"));
-
 var ListItem = React.createClass({
   getInitialState: function() {
     return{ data: [] };
