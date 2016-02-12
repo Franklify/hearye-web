@@ -142,11 +142,11 @@ body {
 							display: inline-block;
 							float: left;
 							height: 42px;
-							margin-top: 69px;
+							margin-top: 50px;
 						}
 
 						.update-btn {
-							margin-top: 69px;
+							margin-top: 50px;
 							@include font($helv, 13px, 500, #fff);
 							@include transition();
 							padding: 0.92em 2em;
