@@ -15,6 +15,10 @@ body .wrapper .bg-wrapper {
         padding-left: 50px;
         padding-right: 30px;
         padding-bottom: 20px; }
+        body .wrapper .bg-wrapper .team .team-boxes .tbox .text-wrapper .action-line {
+          margin-top: 30px; }
+        body .wrapper .bg-wrapper .team .team-boxes .tbox .text-wrapper .sub-action {
+          font-size: 14px; }
         body .wrapper .bg-wrapper .team .team-boxes .tbox .text-wrapper .button {
           cursor: pointer;
           cursor: hand;
