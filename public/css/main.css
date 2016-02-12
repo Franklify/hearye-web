@@ -206,21 +206,23 @@ body {
               body .wrapper .bg .container .row .iphone-container .iphone .device {
                 width: 100%;
                 height: auto; }
-  body footer .container {
-    max-width: 961px;
-    padding-top: 40px;
-    padding-bottom: 20px; }
-    body footer .container .row .column ul li {
-      line-height: 1.5em;
-      color: gray; }
-    body footer .container .row .column ul li:first-child {
-      font-weight: 600;
-      color: #000; }
-    body footer .container .author {
-      padding-left: 10px;
-      margin-top: 40px;
-      color: gray;
-      font-size: 12px; }
+  body footer {
+    border-top: 1px solid #ededed; }
+    body footer .container {
+      max-width: 961px;
+      padding-top: 40px;
+      padding-bottom: 20px; }
+      body footer .container .row .column ul li {
+        line-height: 1.5em;
+        color: gray; }
+      body footer .container .row .column ul li:first-child {
+        font-weight: 600;
+        color: #000; }
+      body footer .container .author {
+        padding-left: 10px;
+        margin-top: 40px;
+        color: gray;
+        font-size: 12px; }
 
 @media screen and (max-width: 940px) {
   body .wrapper .bg .container .row .iphone-container .iphone {
