@@ -3,10 +3,11 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
 body .wrapper #problem {
   width: 100%;
-  height: 600px;
+  min-height: 600px;
   background: url(../img/party-bg.jpeg) center center no-repeat fixed;
   background-size: cover; }
   body .wrapper #problem .bg-problem {
+    min-height: 600px;
     height: 100%;
     width: 100%;
     background: linear-gradient(to bottom, #f2742a 0%, rgba(231, 56, 39, 0.58) 100%); }
@@ -16,7 +17,7 @@ body .wrapper #problem {
       padding-bottom: 50px; }
       body .wrapper #problem .bg-problem .container .time-icon {
         text-align: center;
-        margin: 0px 10px 10px 10px; }
+        margin: 20px 10px 10px 10px; }
         body .wrapper #problem .bg-problem .container .time-icon .svg-icon {
           width: 7em;
           height: 7em; }
@@ -57,7 +58,7 @@ body .wrapper #problem {
 
 body .wrapper #filter {
   width: 100%;
-  height: 600px;
+  max-height: 600px;
   overflow: hidden;
   padding: 30px;
   border-top: 1px solid #ededed;
@@ -82,16 +83,31 @@ body .wrapper #filter {
         left: 26px; }
   body .wrapper #filter ul li:first-child {
     padding: 85px;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    text-align: center; }
+    body .wrapper #filter ul li:first-child .list-icon {
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      padding: 25px;
+      border: 2px solid #000;
+      display: inline-block;
+      border-radius: 200px; }
+      body .wrapper #filter ul li:first-child .list-icon .svg-icon {
+        width: 100%;
+        height: auto; }
+        body .wrapper #filter ul li:first-child .list-icon .svg-icon path, body .wrapper #filter ul li:first-child .list-icon .svg-icon polygon, body .wrapper #filter ul li:first-child .list-icon .svg-icon rect {
+          fill: #000; }
     body .wrapper #filter ul li:first-child h3 {
       text-align: center;
       font-size: 2.5em; }
     body .wrapper #filter ul li:first-child p {
-      margin: 20px; }
+      text-align: left;
+      margin-left: 60px; }
 
 body .wrapper #event-creation {
   width: 100%;
-  height: 600px;
+  max-height: 600px;
   overflow: hidden;
   padding: 30px;
   background: #f2732a; }
@@ -116,7 +132,21 @@ body .wrapper #event-creation {
   body .wrapper #event-creation ul li:last-child {
     padding: 85px;
     line-height: 1.5em;
-    color: #fff; }
+    color: #fff;
+    text-align: center; }
+    body .wrapper #event-creation ul li:last-child .pencil-icon {
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      padding: 25px;
+      border: 2px solid #fff;
+      display: inline-block;
+      border-radius: 200px; }
+      body .wrapper #event-creation ul li:last-child .pencil-icon .svg-icon {
+        width: 100%;
+        height: auto; }
+        body .wrapper #event-creation ul li:last-child .pencil-icon .svg-icon path, body .wrapper #event-creation ul li:last-child .pencil-icon .svg-icon polygon, body .wrapper #event-creation ul li:last-child .pencil-icon .svg-icon rect {
+          fill: #fff; }
     body .wrapper #event-creation ul li:last-child h3 {
       font-size: 2em; }
     body .wrapper #event-creation ul li:last-child p {
@@ -124,13 +154,13 @@ body .wrapper #event-creation {
 
 body .wrapper #sharing {
   width: 100%;
-  height: 600px; }
+  max-height: 600px; }
   body .wrapper #sharing .bg-share {
     height: 100%;
     width: 100%; }
     body .wrapper #sharing .bg-share .container {
       max-width: 912px;
-      padding-top: 90px;
+      padding-top: 50px;
       padding-bottom: 50px;
       text-align: center; }
       body .wrapper #sharing .bg-share .container .people-icon {
@@ -173,28 +203,83 @@ body .wrapper .svg-icon circle {
   stroke: #4691f6;
   stroke-width: 1; }
 
-@media screen and (max-width: 815px) {
-  body .wrapper .bg-about .title-wrapper h1 {
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px; } }
+@media screen and (max-width: 1100px) {
+  body .wrapper #filter ul li:first-child p {
+    margin-left: 0; } }
 
-@media screen and (max-width: 650px) {
-  body .wrapper .bg-about .title-wrapper h1 {
-    top: 45%;
+@media screen and (max-width: 1024px) {
+  body .wrapper #filter ul li:first-child h3 {
     font-size: 27px; }
-  body .wrapper .container .boxes .text-box {
-    width: 100%; }
-  body .wrapper .container .boxes .text-box.first {
-    border-right: 0;
-    border-bottom: 1px solid #ccc;
-    margin: 0; }
-  body .wrapper .container h4 {
-    font-size: 22px; }
-  body .wrapper .container .keys li {
-    font-size: 16px; } }
+  body .wrapper #event-creation ul li:last-child {
+    padding: 85px 35px; }
+    body .wrapper #event-creation ul li:last-child h3 {
+      font-size: 24px; }
+  body .wrapper #sharing .bg-share .container {
+    padding-top: 30px; }
+    body .wrapper #sharing .bg-share .container h1 {
+      font-size: 27px; }
+    body .wrapper #sharing .bg-share .container p {
+      padding: 20px;
+      font-size: 1.2em;
+      line-height: 1.5em; } }
+
+@media screen and (max-width: 992px) {
+  body .wrapper #problem {
+    min-height: none;
+    max-height: none; }
+    body .wrapper #problem .bg-problem .container h1 {
+      font-size: 20px; }
+    body .wrapper #problem .bg-problem .container ul li {
+      width: 100%;
+      text-align: center; }
+    body .wrapper #problem .bg-problem .container ul li:first-child {
+      margin-right: 0;
+      border-right: 0; } }
+
+@media screen and (max-width: 850px) {
+  body .wrapper #filter {
+    max-height: 800px; }
+    body .wrapper #filter ul li {
+      padding: 0;
+      float: none;
+      width: 100%; }
+    body .wrapper #filter ul li:first-child {
+      padding: 20px; }
+      body .wrapper #filter ul li:first-child p {
+        padding: 20px; }
+  body .wrapper #event-creation {
+    max-height: 800px; }
+    body .wrapper #event-creation ul li {
+      padding: 0;
+      position: relative;
+      top: 350px;
+      float: none;
+      width: 100%; }
+    body .wrapper #event-creation ul li:last-child {
+      top: -800px;
+      padding: 20px; }
+      body .wrapper #event-creation ul li:last-child p {
+        padding: 20px; } }
+
+@media screen and (max-width: 550px) {
+  body .wrapper #event-creation ul li {
+    top: 400px; }
+  body .wrapper #event-creation ul li:last-child {
+    top: -725px; }
+    body .wrapper #event-creation ul li:last-child p {
+      padding: 0; } }
 
 @media screen and (max-width: 450px) {
   body .wrapper {
-    max-height: none;
-    overflow: none; } }
+    max-height: none; } }
+
+@media screen and (max-width: 410px) {
+  body .wrapper #filter ul li .iphone-animation, body .wrapper #event-creation ul li .iphone-animation {
+    width: 290px; }
+    body .wrapper #filter ul li .iphone-animation .screen, body .wrapper #event-creation ul li .iphone-animation .screen {
+      width: 251px;
+      top: 86px;
+      left: 21px; }
+  body .wrapper #event-creation ul li:last-child {
+    padding: 0;
+    top: -625px; } }

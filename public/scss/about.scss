@@ -40,10 +40,11 @@ body {
   .wrapper {
 			#problem {
 				width: 100%;
-				height: 600px;
+				min-height: 600px;
 				background: url(../img/party-bg.jpeg) center center no-repeat fixed;
 				background-size: cover;
 				.bg-problem {
+					min-height:600px;
 					height: 100%;
 					width: 100%;
 					background: linear-gradient(to bottom, rgba(242,116,42,1) 0%, rgba(231,56,39,0.58) 100%);;
@@ -54,7 +55,7 @@ body {
 
 						.time-icon {
 							text-align: center;
-							margin: 0px 10px 10px 10px;
+							margin: 20px 10px 10px 10px;
 
 							.svg-icon {
 								width: 7em;
@@ -107,7 +108,7 @@ body {
 
 			#filter {
 				width: 100%;
-				height: 600px;
+				max-height: 600px;
 				overflow: hidden;
 				padding: 30px;
 				border-top: 1px solid #ededed;
@@ -141,6 +142,25 @@ body {
 					li:first-child {
 						padding: 85px;
 						line-height: 1.5em;
+						text-align: center;
+						.list-icon {
+							width: 100px;
+							height: 100px;
+							margin: 20px;
+							padding: 25px;
+							border: 2px solid #000;
+							display: inline-block;
+							border-radius: 200px;
+
+							.svg-icon {
+								width: 100%;
+								height: auto;
+								path, polygon, rect {
+									fill: #000;
+
+								}
+							}
+						}
 						h3 {
 							text-align: center;
 							font-size: 2.5em;
@@ -148,7 +168,8 @@ body {
 						}
 
 						p {
-							margin: 20px;
+							text-align: left;
+							margin-left: 60px;
 						}
 
 					}
@@ -159,7 +180,7 @@ body {
 
 			#event-creation {
 				width: 100%;
-				height: 600px;
+				max-height: 600px;
 				overflow: hidden;
 				padding: 30px;
 				background: rgba(242,115,42,1);
@@ -194,6 +215,26 @@ body {
 						padding: 85px;
 						line-height: 1.5em;
 						color: #fff;
+						text-align:center;
+
+						.pencil-icon {
+							width: 100px;
+							height: 100px;
+							margin: 20px;
+							padding: 25px;
+							border: 2px solid #fff;
+							display: inline-block;
+							border-radius: 200px;
+
+							.svg-icon {
+								width: 100%;
+								height: auto;
+								path, polygon, rect {
+									fill: #fff;
+
+								}
+							}
+						}
 
 						h3 {
 							font-size: 2em;
@@ -210,7 +251,7 @@ body {
 
 			#sharing {
 				width: 100%;
-				height: 600px;
+				max-height: 600px;
 				.bg-share {
 					height: 100%;
 					width: 100%;
@@ -218,7 +259,7 @@ body {
 					.container {
 
 						max-width: 912px;
-						padding-top: 90px;
+						padding-top: 50px;
 						padding-bottom: 50px;
 						text-align: center;
 						.people-icon {
@@ -354,64 +395,189 @@ body {
     // }
     }
 }
-
-
-@media screen and (max-width: 815px) {
-  body {
-    .wrapper {
-      .bg-about {
-        .title-wrapper {
-          h1 {
-            width: 100%;
-            padding-left: 10px;
-            padding-right: 10px;
-          }
-        }
-      }
-    }
-  }
+@media screen and (max-width:1100px) {
+	body {
+		.wrapper {
+			#filter {
+				ul {
+					li:first-child {
+						p {
+							margin-left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
-@media screen and (max-width: 650px) {
-  body {
-    .wrapper {
-      .bg-about {
-        .title-wrapper {
-          h1 {
-            top: 45%;
-            font-size: 27px;
-          }
-        }
-      }
-      .container {
-        .boxes {
-          .text-box {
-            width: 100%;
-          }
-          .text-box.first {
-            border-right: 0;
-            border-bottom: 1px solid #ccc;
-            margin: 0;
-          }
-        }
-        h4 {
-          font-size: 22px;
-        }
-        .keys {
-          li {
-            font-size: 16px;
-          }
-        }
-      }
-    }
-  }
+@media screen and (max-width: 1024px) {
+	body {
+		.wrapper {
+			#filter {
+				ul {
+					li:first-child {
+						h3 {
+							font-size: 27px;
+						}
+					}
+				}
+			}
+
+			#event-creation {
+				ul {
+					li:last-child {
+						padding: 85px 35px;
+						h3 {
+							font-size: 24px;
+						}
+					}
+				}
+			}
+
+			#sharing {
+				.bg-share {
+					.container {
+						padding-top: 30px;
+						h1 {
+							font-size: 27px;
+						}
+						p {
+							padding: 20px;
+							font-size: 1.2em;
+							line-height: 1.5em;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 992px) {
+	body {
+		.wrapper {
+			#problem {
+				min-height: none;
+				max-height: none;
+				.bg-problem {
+					.container {
+						h1 {
+							font-size: 20px;
+						}
+						ul {
+							li {
+								width: 100%;
+								text-align: center;
+							}
+							li:first-child {
+								margin-right: 0;
+								border-right: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 850px) {
+	body {
+		.wrapper {
+			#filter {
+				max-height: 800px;
+				ul {
+					li {
+						padding: 0;
+						float: none;
+						width: 100%;
+					}
+					li:first-child {
+						padding: 20px;
+						p {
+							padding: 20px;
+						}
+					}
+				}
+			}
+			#event-creation {
+				max-height: 800px;
+				ul {
+					li {
+						padding: 0;
+						position: relative;
+						top: 350px;
+						float: none;
+						width: 100%;
+					}
+					li:last-child {
+						top: -800px;
+						padding: 20px;
+						p {
+							padding: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 550px) {
+	body {
+		.wrapper {
+			#event-creation {
+				ul {
+					li {
+						top: 400px;
+					}
+					li:last-child  {
+						top: -725px;
+						p {
+							padding: 0;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 450px) {
-  body {
-    .wrapper {
-      max-height: none;
-      overflow: none;
-    }
-  }
+	body {
+		.wrapper {
+			max-height: none;
+		}
+	}
+}
+
+@media screen and (max-width: 410px) {
+	body {
+		.wrapper {
+			#filter, #event-creation {
+				ul {
+					li {
+						.iphone-animation {
+							width: 290px;
+
+							.screen {
+								width: 251px;
+								top: 86px;
+								left: 21px;
+							}
+						}
+					}
+				}
+			}
+			#event-creation {
+				ul {
+					li:last-child {
+						padding: 0;
+						top: -625px;
+					}
+				}
+			}
+
+		}
+	}
 }
