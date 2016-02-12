@@ -49,30 +49,32 @@ body .wrapper .bg-wrapper {
             color: #fff; }
     body .wrapper .bg-wrapper .team .team-boxes li.squad {
       width: 60%; }
-      body .wrapper .bg-wrapper .team .team-boxes li.squad ul li {
-        width: 250px;
-        display: inline-block;
-        margin: 15px; }
-        body .wrapper .bg-wrapper .team .team-boxes li.squad ul li .mask {
-          margin: 0 auto;
-          height: 100px;
-          width: 100px;
-          border-radius: 100px;
-          overflow: hidden; }
-          body .wrapper .bg-wrapper .team .team-boxes li.squad ul li .mask img {
-            width: 100%;
-            height: auto; }
-        body .wrapper .bg-wrapper .team .team-boxes li.squad ul li h4, body .wrapper .bg-wrapper .team .team-boxes li.squad ul li p {
-          text-align: center; }
-        body .wrapper .bg-wrapper .team .team-boxes li.squad ul li p.bio {
-          text-align: left;
-          color: #3e3e3e; }
-          body .wrapper .bg-wrapper .team .team-boxes li.squad ul li p.bio a {
-            color: #0B87BC; }
-            body .wrapper .bg-wrapper .team .team-boxes li.squad ul li p.bio a:hover {
-              color: #08648c; }
-        body .wrapper .bg-wrapper .team .team-boxes li.squad ul li h4 {
-          margin-bottom: 0; }
+      body .wrapper .bg-wrapper .team .team-boxes li.squad ul {
+        text-align: center; }
+        body .wrapper .bg-wrapper .team .team-boxes li.squad ul li {
+          width: 250px;
+          display: inline-block;
+          margin: 15px; }
+          body .wrapper .bg-wrapper .team .team-boxes li.squad ul li .mask {
+            margin: 0 auto;
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            overflow: hidden; }
+            body .wrapper .bg-wrapper .team .team-boxes li.squad ul li .mask img {
+              width: 100%;
+              height: auto; }
+          body .wrapper .bg-wrapper .team .team-boxes li.squad ul li h4, body .wrapper .bg-wrapper .team .team-boxes li.squad ul li p {
+            text-align: center; }
+          body .wrapper .bg-wrapper .team .team-boxes li.squad ul li p.bio {
+            text-align: left;
+            color: #3e3e3e; }
+            body .wrapper .bg-wrapper .team .team-boxes li.squad ul li p.bio a {
+              color: #0B87BC; }
+              body .wrapper .bg-wrapper .team .team-boxes li.squad ul li p.bio a:hover {
+                color: #08648c; }
+          body .wrapper .bg-wrapper .team .team-boxes li.squad ul li h4 {
+            margin-bottom: 0; }
 
 @media screen and (max-width: 992px) {
   body .wrapper .bg-wrapper .team .team-boxes .tbox {
