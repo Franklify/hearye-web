@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
 body .wrapper #problem {
   width: 100%;
-  height: 500px;
+  height: 600px;
   background: url(../img/party-bg.jpeg) center center no-repeat fixed;
   background-size: cover; }
   body .wrapper #problem .bg-problem {
@@ -57,7 +57,7 @@ body .wrapper #problem {
 
 body .wrapper #filter {
   width: 100%;
-  height: 500px;
+  height: 600px;
   overflow: hidden;
   padding: 30px;
   border-top: 1px solid #ededed;
@@ -124,42 +124,41 @@ body .wrapper #event-creation {
 
 body .wrapper #sharing {
   width: 100%;
-  height: 500px;
-  overflow: hidden;
-  padding: 30px;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed; }
-  body .wrapper #sharing ul li {
-    width: 50%;
-    display: inline-block;
-    float: left;
-    padding: 20px;
-    text-align: center; }
-    body .wrapper #sharing ul li .icon {
-      display: inline-block;
-      margin: 10px 5px; }
-      body .wrapper #sharing ul li .icon path, body .wrapper #sharing ul li .icon polygon, body .wrapper #sharing ul li .icon rect {
-        fill: #F2742B; }
-    body .wrapper #sharing ul li .iphone-icon .svg-icon {
-      width: 9em;
-      height: 9em; }
-    body .wrapper #sharing ul li .message-icon {
-      position: relative;
-      top: -30px; }
-      body .wrapper #sharing ul li .message-icon .svg-icon {
-        width: 6em;
-        height: 6em; }
-  body .wrapper #sharing ul li:first-child {
-    text-align: left;
-    padding: 85px;
-    line-height: 1.5em; }
-    body .wrapper #sharing ul li:first-child h3 {
-      text-align: center;
-      font-size: 2.5em; }
-    body .wrapper #sharing ul li:first-child p {
-      margin: 20px; }
-  body .wrapper #sharing ul li:last-child {
-    padding-top: 80px; }
+  height: 600px; }
+  body .wrapper #sharing .bg-share {
+    height: 100%;
+    width: 100%; }
+    body .wrapper #sharing .bg-share .container {
+      max-width: 912px;
+      padding-top: 90px;
+      padding-bottom: 50px;
+      text-align: center; }
+      body .wrapper #sharing .bg-share .container .people-icon {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        padding: 15px;
+        border: 2px solid #f2732a;
+        display: inline-block;
+        border-radius: 200px; }
+        body .wrapper #sharing .bg-share .container .people-icon .svg-icon {
+          width: 100%;
+          height: auto; }
+          body .wrapper #sharing .bg-share .container .people-icon .svg-icon path, body .wrapper #sharing .bg-share .container .people-icon .svg-icon polygon, body .wrapper #sharing .bg-share .container .people-icon .svg-icon rect {
+            fill: #f2732a; }
+      body .wrapper #sharing .bg-share .container h1 {
+        text-align: center;
+        color: #000;
+        font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
+        font-size: 3em;
+        font-weight: 700;
+        margin-top: 0;
+        line-height: 1.5em; }
+      body .wrapper #sharing .bg-share .container p {
+        color: #000;
+        font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+        font-weight: 500; }
 
 body .wrapper .svg-icon {
   width: 5em;
