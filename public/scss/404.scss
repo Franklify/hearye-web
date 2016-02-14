@@ -1,0 +1,30 @@
+
+$proxima: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
+@mixin font($type : $helv, $size : 16px, $weight : 400, $color : #000) {
+	color: $color;
+	font-family: $type;
+	font-size: $size;
+	font-weight: $weight;
+}
+
+body {
+
+  h1 {
+    text-align: center;
+    @include font($proxima, 2em, 400, #000);
+    margin-top: 30px;
+
+  }
+
+  .error-banner {
+    margin: 50px auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 500px;
+    overflow:hidden;
+    img {
+     width: auto;
+     height: 100%;
+    }
+  }
+}
