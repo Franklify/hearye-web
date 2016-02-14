@@ -282,12 +282,13 @@ body {
 						}
 						h1 {
 							text-align: center;
-							@include font($proxima, 3em, 700, #000);
+							@include font($proxima, 2.5em, 700, #000);
 							margin-top: 0;
 							line-height: 1.5em;
 						}
 						p {
-							@include font($proxima, 1.5em, 500, #000)
+							@include font($proxima, 1.2em, 500, #000)
+							padding: 20px;
 						}
 					}
 				}
