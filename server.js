@@ -1,3 +1,4 @@
+// require dependencies
 var express = require('express'),
 app = express(),
 path = require('path');
@@ -32,7 +33,7 @@ app.use(function(err, request, response, next) {
   response.sendFile(path.join(__dirname + '/views/500.html'));
 });
 
-
+// start default server
 app.listen(process.env.PORT || 1337, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });

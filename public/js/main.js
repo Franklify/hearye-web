@@ -1,4 +1,3 @@
-
 var ListItem = React.createClass({
   getInitialState: function() {
     return{ data: [] };
@@ -38,7 +37,6 @@ var Feed = React.createClass({
     this.eventRef.once("value", function(snapshot) {
       var i = 0;
       snapshot.forEach(function(childSnapshot) {
-         console.log(childSnapshot.val());
       });
     });
   },
