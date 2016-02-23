@@ -2,9 +2,15 @@
 var express = require('express'),
 app = express(),
 path = require('path');
+var nodemailer = require('nodemailer');
+var routes = require('routes');
+var bodyParser = require('body-parser');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 //get request for index
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/views/index.html');
@@ -18,6 +24,7 @@ app.get('/team', function(req, res) {
 app.get('/blog', function(req, res) {
   res.sendFile(__dirname + '/views/blog.html');
 });
+
 
 //404 status handling
 app.use(function(request, response, next) {
