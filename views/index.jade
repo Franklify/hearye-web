@@ -1,0 +1,40 @@
+extends layout
+  
+block content  
+  .bg
+    .container
+      .row
+        #desc.description.col-md-6.col-sm-6
+          h1 HearYe
+          h2 The digital bulletin board for university events.
+          p Say goodbye to word of mouth, and say hello to the new town crier.
+          form#mc-embedded-subscribe-form.validate(action='//hearye.us12.list-manage.com/subscribe/post?u=63acebccc71d6fab3e9c58f4b&id=97590c03b9', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+            #mc_embed_signup_scroll
+              input#mce-EMAIL.form-control.subscribe-input(type='email', value='', name='EMAIL', placeholder='Email address', required='')
+              // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+              div(style='position: absolute; left: -5000px;', aria-hidden='true')
+                input(type='text', name='b_63acebccc71d6fab3e9c58f4b_97590c03b9', tabindex='-1', value='')
+              .clear
+                input#mc-embedded-subscribe.update-btn(type='submit', value='Get Updates', name='subscribe')
+        .iphone-container.col-md-6.col-sm-6
+          .iphone
+            img.top-bar.screen-assets(src='img/hearye-topbar.jpg', alt='Top Bar')
+            img.bottom-bar.screen-assets(src='img/hearye-bottombar.jpg', alt='Bottom Bar')
+            .feed.screen-assets
+              .feed-container
+                ul#feed-list
+                  li.feed-item
+                    h3 DesignWorks Recruitment
+                    h6.item-date
+                      | Jan 11
+                      h6
+                        h4.item-author by DesignWorks
+                        p.item-description
+                          span.item-price Free
+                          |  • 
+                          span.item-location Norris Center
+                          |  • We're looking for designers and developers for this upcoming quarter. Build cool stuff and make money! Apply now!
+                        p.item-info
+                          span.item-comments 12 comments
+                          span.item-attending 42 attending
+            img.device(src='img/iphone-silver.png', alt='iPhone')
