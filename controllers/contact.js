@@ -22,7 +22,7 @@ exports.sendMail = function(req, res) {
 
     transporter.sendMail({
         from: data.email,
-        to: 'navinkgopaul@gmail.com',
+        to: 'info@hearye.io',
         subject: 'Message from ' + data.name,
         text: data.message
     });

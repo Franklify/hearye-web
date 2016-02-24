@@ -1,21 +1,24 @@
 extends layout
 
 block content
-  .wrapper
+  .contact-wrapper.container 
     h1 Contact Form
     div.content
       form(url='contact.jade', name='contactus', id='contactus', method='POST')
         fieldset
-          p
-            label(for='name') Name:
+          p 
+            span 1
+            | Name
             br
             input(name='name', type='text', value='', id='name')
           p
-            label(for='email') Email:
+            span 2
+            | Email
             br
             input(name='email', type='text', value='', id='email')
           p
-            label(for='message') Message:
+            span 3
+            | Message
             br
             textarea(name='message', cols='40', rows='10', id='message')
           p
