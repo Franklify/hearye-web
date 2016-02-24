@@ -26,6 +26,9 @@ app.get('/how-it-works', aboutController.about);
 app.get('/team', teamController.team);
 app.get('/contact', contactController.contact);
 
+app.post('/contact', function (req, res) {
+  contactController.sendMail(req, res);
+});
 //get request for index
 // app.get('/', function(req, res){
 //   res.sendFile(__dirname + '/views/index.html');
