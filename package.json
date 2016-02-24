@@ -24,5 +24,8 @@
     "nodemailer": "^2.1.0",
     "path": "^0.12.7",
     "routes": "^2.1.0"
+  },
+  "dependencies": {
+    "jade": "^1.11.0"
   }
 }
