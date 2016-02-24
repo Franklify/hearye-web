@@ -9,6 +9,7 @@ var bodyParser = require('body-parser');
 var homeController = require('./controllers/home');
 var aboutController = require('./controllers/about');
 var teamController = require('./controllers/team');
+var contactController = require('./controllers/contact');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -23,6 +24,7 @@ app.use(bodyParser.urlencoded({
 app.get('/', homeController.index);
 app.get('/how-it-works', aboutController.about);
 app.get('/team', teamController.team);
+app.get('/contact', contactController.contact);
 
 //get request for index
 // app.get('/', function(req, res){
