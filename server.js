@@ -10,6 +10,7 @@ var homeController = require('./controllers/home');
 var aboutController = require('./controllers/about');
 var teamController = require('./controllers/team');
 var contactController = require('./controllers/contact');
+var contactHandlingController = require('./controllers/thankyou');
 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -26,6 +27,7 @@ app.get('/', homeController.index);
 app.get('/how-it-works', aboutController.about);
 app.get('/team', teamController.team);
 app.get('/contact', contactController.contact);
+app.get('/thankyou', contactHandlingController.thankyou);
 
 app.post('/contact', function (req, res) {
   contactController.sendMail(req, res);
