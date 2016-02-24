@@ -26,5 +26,5 @@ exports.sendMail = function(req, res) {
         subject: 'Message from ' + data.name,
         text: data.message
     });
-    res.render('contact');
+    res.redirect('/contact');
 };
