@@ -467,15 +467,17 @@ body {
 @media screen and (max-width: 450px) {
 	body {
 		.wrapper {
-			max-height: 800px;
-			overflow: hidden;
-			.bg {
-				.container {
-					.row {
-						.iphone-container {
-							.iphone {
-								position: relative;
-								left: -15px;
+			.inner-container {
+				max-height: 800px;
+				overflow: hidden;
+				.bg {
+					.container {
+						.row {
+							.iphone-container {
+								.iphone {
+									position: relative;
+									left: -15px;
+								}
 							}
 						}
 					}

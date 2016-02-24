@@ -281,10 +281,10 @@ body {
       display: none; } }
 
 @media screen and (max-width: 450px) {
-  body .wrapper {
+  body .wrapper .inner-container {
     max-height: 800px;
     overflow: hidden; }
-    body .wrapper .bg .container .row .iphone-container .iphone {
+    body .wrapper .inner-container .bg .container .row .iphone-container .iphone {
       position: relative;
       left: -15px; } }
 
