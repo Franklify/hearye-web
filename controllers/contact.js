@@ -20,11 +20,16 @@ exports.sendMail = function(req, res) {
       }
     });
 
-    transporter.sendMail({
-        from: data.email,
-        to: 'info@hearye.io',
-        subject: 'Message from ' + data.name,
-        text: data.message
-    });
-    res.redirect('/thankyou');
+    if (!data.name || !data.email || !data.message) {
+      res.redirect('/contact');
+    } else {
+
+      transporter.sendMail({
+          from: data.email,
+          to: 'info@hearye.io',
+          subject: 'Message from ' + data.name,
+          text: data.message
+      });
+      res.redirect('/thankyou');
+    }
 };

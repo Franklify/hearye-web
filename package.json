@@ -26,6 +26,11 @@
     "routes": "^2.1.0"
   },
   "dependencies": {
+    "async": "^1.5.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.13.0",
     "jade": "^1.11.0",
     "nodemailer": "^2.2.1"
   }
