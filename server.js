@@ -11,6 +11,7 @@ var aboutController = require('./controllers/about');
 var teamController = require('./controllers/team');
 var contactController = require('./controllers/contact');
 
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
