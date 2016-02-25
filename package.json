@@ -1,7 +1,7 @@
 {
   "name": "hearye-landing",
   "version": "1.0.0",
-  "description": "A landing page for the HEARYE App",
+  "description": "A landing page for the HearYe App",
   "main": "server.js",
   "scripts": {
     "start": "gulp",
