@@ -19,8 +19,8 @@ body .wrapper #problem {
         text-align: center;
         margin: 20px 10px 10px 10px; }
         body .wrapper #problem .bg-problem .container .time-icon .svg-icon {
-          width: 7em;
-          height: 7em; }
+          width: 6em;
+          height: 6em; }
           body .wrapper #problem .bg-problem .container .time-icon .svg-icon path, body .wrapper #problem .bg-problem .container .time-icon .svg-icon polygon, body .wrapper #problem .bg-problem .container .time-icon .svg-icon rect {
             fill: #fff; }
       body .wrapper #problem .bg-problem .container h1 {
@@ -28,7 +28,7 @@ body .wrapper #problem {
         color: #fff;
         font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
         font-size: 2em;
-        font-weight: 700;
+        font-weight: 400;
         margin-top: 0;
         line-height: 1.5em; }
       body .wrapper #problem .bg-problem .container ul {
