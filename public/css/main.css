@@ -35,6 +35,8 @@ body {
         body header .container .global-margin .row .col-md-12 .hearye-logo {
           display: inline-block;
           height: 50px;
+          position: relative;
+          top: 5px;
           width: auto; }
           body header .container .global-margin .row .col-md-12 .hearye-logo img {
             height: 100%;

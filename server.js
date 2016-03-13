@@ -3,6 +3,7 @@ var express = require('express'),
 app = express(),
 path = require('path');
 var nodemailer = require('nodemailer');
+var favicon = require('serve-favicon');
 var routes = require('routes');
 var bodyParser = require('body-parser');
 var flash = require('express-flash');
@@ -20,6 +21,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(favicon(path.join(__dirname, 'public', 'img/hearye-new-logo.png')));
 
 app.use(bodyParser.urlencoded({
   extended: true
@@ -34,6 +36,8 @@ app.use(session({
   cookie: { maxAge: 60000 }}));
   //Initialize Flash
 app.use(flash());
+
+
 
 app.get('/', homeController.index);
 app.get('/how-it-works', aboutController.about);
