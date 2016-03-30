@@ -308,6 +308,8 @@ body {
 @media screen and (max-width: 530px) {
   body header .container {
     padding: 0; }
+    body header .container .global-margin .row .col-md-12 .hearye-logo {
+      top: 0; }
     body header .container .global-margin .row .col-md-12 .non-mobile {
       display: none; }
     body header .container .global-margin .row .col-md-12 .mobile, body header .container .global-margin .row .col-md-12 .menu-trigger {

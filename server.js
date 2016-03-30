@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 var flash = require('express-flash');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
-
+ 
 var homeController = require('./controllers/home');
 var aboutController = require('./controllers/about');
 var teamController = require('./controllers/team');
@@ -48,17 +48,6 @@ app.get('/thankyou', contactHandlingController.thankyou);
 app.post('/contact', function (req, res) {
   contactController.sendMail(req, res);
 });
-//get request for index
-// app.get('/', function(req, res){
-//   res.sendFile(__dirname + '/views/index.html');
-// });
-// app.get('/how-it-works', function(req, res) {
-//   res.sendFile(__dirname + '/views/about.html');
-// });
-// app.get('/team', function(req, res) {
-//   res.sendFile(__dirname + '/views/team.html');
-// });
-
 
 
 //404 status handling
